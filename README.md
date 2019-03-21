@@ -27,7 +27,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|nickname|integer|null: false, add_index|
+|nickname|integer|null: false, index: true, unique_key: true|
 |email|string|null: false, unique_key: true|
 |password|string|null: false, unique_key: true|
 
@@ -41,7 +41,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, add_index|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: :members
