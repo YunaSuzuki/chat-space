@@ -27,9 +27,9 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|nickname|integer|null: false, index: true|
-|email|string|null: false, index: true|
-|password|string|null: false|
+|nickname|integer|null: false, add_index|
+|email|string|null: false, unique_key: true|
+|password|string|null: false, unique_key: true|
 
 ### Association
 - has_many :groups, through: :members
@@ -40,7 +40,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, index: true|
+|name|string|null: false, add_index|
 
 ### Association
 - has_many :users, through: :members
