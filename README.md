@@ -23,54 +23,54 @@ Things you may want to cover:
 
 * ...
 
-## messageテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|id|integer|null: false, foreign_key:true|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|message_text|text|null: false, foreign_key: true|
-|image|image|null false, foreign_key: true|
-
-### Association
-- belongs_to :group
-- belongs_to :user
-
-
-## group_chatテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
-|group_name|string|null false, foreign_key: true|
-
-
-### Association
-- has_many :messages
-- has_many :members
-
-
 ## userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|email|string|null: false, foreign_key: true|
-|password|string|null: false, foreign_key: true|
-|nickname|string|null: false, foreign_key: true|
+|nickname|integer|null: false, index: true|
+|email|string|null: false, index: true|
+|password:string:null: false|
 
 ### Association
-- has_many :groups
-- has_many :messages
+- has_many :groups, through: :members
+- has_many :contents, through: :members
+
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name:string:null: false|
+
+### Association
+- has_many :users, through: :members
+- has_many :contents
+
 
 
 ## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false|
+|group_id|integer|null: false|
+
+
+### Association
+- has_many :users
+- belongs_to :group
+
+
+## contentテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false|
+|group_id|integer|null: false|
+|content:text:null: false|
+|image:string:null: true|
 
 ### Association
 - belongs_to :group
 - belongs_to :user
+
