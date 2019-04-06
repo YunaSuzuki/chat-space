@@ -28,53 +28,59 @@ h1{
 
   margin-top: 30px;
   height: 60px;
+
+
+  &--left{
+    float: left;
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+
+    &__label{
+      line-height: 50px;
+      float: right;
+    }
+
+  }
+
+
+  &--right{
+    float: right;
+    width: 70%;
+
+
+    &__input{
+      float: left;
+      width: 100%;
+      line-height: 30px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      font-weight: normal;
+    }
+
+    &__chat-member-list{
+      padding: 0 15px;
+      line-height: 50px;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+
+
+        &__chat-member-name{
+          line-height: 50px;
+        }
+
+    }
+
+    &__action-btn{
+      padding: 12px 20px;
+      color: #ffffff;
+      background-color: $blue;
+      font-weight: normal;
+      border: 0;
+      width: 100px;
+    }
 }
 
-.chat-group-form__field--left{
-  float: left;
-  width: 30%;
-  padding-right: 20px;
-  padding-left: 20px;
-  box-sizing: border-box;
 }
-
-.chat-group-form__field--left__label{
-  line-height: 50px;
-  float: right;
-}
-
-
-.chat-group-form__field--right{
-  float: right;
-  width: 70%;
-}
-
-.chat-group-form__field--right__input{
-  float: left;
-  width: 100%;
-  line-height: 30px;
-  padding: 10px 15px;
-  box-sizing: border-box;
-  font-weight: normal;
-}
-
-.chat-group-form__field--right__chat-member-list{
-  padding: 0 15px;
-  line-height: 50px;
-  font-size: 14px;
-  border-bottom: 1px solid #ddd;
-}
-
-.chat-group-form__field--right__chat-member-list__chat-member-name{
-  line-height: 50px;
-}
-
-.chat-group-form__field--right__action-btn{
-  padding: 12px 20px;
-  color: #ffffff;
-  background-color: $blue;
-  font-weight: normal;
-  border: 0;
-  width: 100px;
-}
-
