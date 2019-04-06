@@ -38,7 +38,7 @@ h1{
   box-sizing: border-box;
 }
 
-.chat-group-form__label{
+.chat-group-form__field--left__label{
   line-height: 50px;
   float: right;
 }
@@ -49,7 +49,7 @@ h1{
   width: 70%;
 }
 
-.chat-group-form__input{
+.chat-group-form__field--right__input{
   float: left;
   width: 100%;
   line-height: 30px;
@@ -58,18 +58,18 @@ h1{
   font-weight: normal;
 }
 
-.chat-group-form__chat-member-list{
+.chat-group-form__field--right__chat-member-list{
   padding: 0 15px;
   line-height: 50px;
   font-size: 14px;
   border-bottom: 1px solid #ddd;
 }
 
-.chat-group-form__chat-member-name{
+.chat-group-form__field--right__chat-member-list__chat-member-name{
   line-height: 50px;
 }
 
-.chat-group-form__action-btn{
+.chat-group-form__field--right__action-btn{
   padding: 12px 20px;
   color: #ffffff;
   background-color: $blue;
