@@ -1,0 +1,61 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheets" href="groups.scss">
+</head>
+
+<body>
+<%= form_tag('./groups/new', method: :post) do %>
+<div class="chat-group-form">
+
+  <h1>
+    新規チャットグループ
+  </h1>
+
+  <div class="chat-group-form__field">
+      <div class="chat-group-form__field--left">
+        <label class="chat-group-form__field--left__label">
+        グループ名
+        </label>
+      </div>
+      <div class="chat-group-form__field--right">
+      <input class="chat-group-form__field--right__input" placeholder="グループ名を入力してください" type="text" name="name">
+      </div>
+  </div>
+
+  <div class="chat-group-form__field">
+      <div class="chat-group-form__field--left">
+        <label class="chat-group-form__field--left__label">チャットメンバーを追加
+        </label>
+      </div>
+      <div class="chat-group-form__field--right">
+        <div class="chat-group-form__field--right__search">
+          <input class="chat-group-form__field--right__input" placeholder="追加したいユーザー名を入力してください">
+        </div>
+      </div>
+  </div>
+
+  <div class="chat-group-form__field">
+      <div class="chat-group-form__field--left">
+        <label class="chat-group-form__field--left__label">チャットメンバー
+        </label>
+      </div>
+      <div class="chat-group-form__field--right">
+        <div class="chat-group-form__field--right__chat-member-list">
+          <p class="chat-group-form__field--right__chat-member-list__chat-member-name">Yuna
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="chat-group-form__field">
+    <div class="chat-group-form__field--left">
+    </div>
+    <div class="chat-group-form__field--right">
+      <input type="submit" name="commit" value="登録する" class="chat-group-form__field--right__action-btn" data-disable-with="登録する">
+    </div>
+  </div>
+
+</div>
+<% end %>
+</body>
+
