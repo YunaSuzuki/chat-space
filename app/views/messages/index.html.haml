@@ -25,7 +25,7 @@
       .form
         %form.form__new-message
           .form__new-message__input-box
-            %input.form__new-message__input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-            %label.form__new-message__input-box__image{:for => "message_image"}
+            %input.form__new-message__input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+            %label.form__new-message__input-box__image{for: "message_image"}
               %i.fa.fa-image
-          %input.form__new-message__submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+          %input.form__new-message__submit-btn{"data-disable-with" => "Send", name: "commit", type: "submit", value: "Send"}/
