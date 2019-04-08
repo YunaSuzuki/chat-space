@@ -4,8 +4,8 @@
       .side-header__box
         %p.side-header__box__user-name user_name
         %ul.side-header__box__menu
-          %li.fa.fa-edit
-          %li.fa.fa-cog
+          = fa_icon "edit"
+          = fa_icon "cog"
     .groups
       .group
         %p.group__group-name sample
@@ -26,5 +26,5 @@
         .form__new-message__input-box
           %input.form__new-message__input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
           %label.form__new-message__input-box__image{for: "message_image"}
-            %i.fa.fa-image
+            = fa_icon"image"
         %input.form__new-message__submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}/
