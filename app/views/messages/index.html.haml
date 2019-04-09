@@ -1,0 +1,30 @@
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name user_name
+        %ul.side-header__box__menu
+          = fa_icon "edit"
+          = fa_icon "cog"
+    .groups
+      .group
+        %p.group__group-name sample
+        %p.group__latest-message まだメッセージがありません
+  .main-chat
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group  sample
+        %ul.main-header__left-box__member-list
+          Member :
+          %li.main-header__left-box__member-list__member
+            user1
+      .main-header__edit-btn Edit
+    .messages
+      ここにメッセージが表示されます。
+    .form
+      %form.form__new-message
+        .form__new-message__input-box
+          %input.form__new-message__input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+          %label.form__new-message__input-box__image{for: "message_image"}
+            = fa_icon"image"
+        %input.form__new-message__submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}/

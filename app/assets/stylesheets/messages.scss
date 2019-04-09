@@ -25,7 +25,10 @@
     display: flex;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> edit-messages
     &__box{
         display: flex;
         justify-content: space-between;
@@ -85,7 +88,10 @@
         }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> edit-messages
         &__member-list{
             font-size: 12px;
             color: #999999;
@@ -102,6 +108,7 @@
     }
 
     &__edit-btn{
+<<<<<<< HEAD
     height: 40px;
     line-height: 40px;
     color: #38aef0;
@@ -112,6 +119,18 @@
     position: absolute;
     right: 40px;
     margin: 28px 40px 0 0;
+=======
+        height: 40px;
+        line-height: 40px;
+        color: #38aef0;
+        border-style: solid;
+        border-color: #38aef0;
+        border-width: thin;
+        padding: 0 20px;
+        position: absolute;
+        right: 40px;
+        margin: 28px 40px 0 0;
+>>>>>>> edit-messages
     }
 
 }
@@ -124,7 +143,10 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> edit-messages
 .form{
     height: 90px;
     background-color: #ddd;
@@ -172,5 +194,8 @@
         }
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> edit-messages
