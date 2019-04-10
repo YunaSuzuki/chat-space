@@ -1,19 +1,26 @@
-.account-page
-  .edit-account--left
-    .edit-account--left__title
-      Edit Account
-    .edit-account--left__subtitle
-      アカウントの編集
-    %a.btn ログアウト
-    %a.btn トップページへ戻る
-  .edit-account--right
-    .edit-account--right__field
-      %label.edit-account--right__field__label
-        Name
-      %input{type: "text"}/
-    .edit-account--right__field
-      %label.edit-account--right__field__label
-        Email
-      %input{type: "text"}/
-    .edit-account--right__btn{type: "submit", value: "Update"}
-      Update
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %link{:href => "user.scss", :rel => "stylesheets"}/
+  %body
+    .account-page
+      .edit-account--left
+        .edit-account--left__title
+          Edit Account
+        .edit-account--left__subtitle
+          アカウントの編集
+        %a.btn ログアウト
+        %a.btn トップページへ戻る
+      .edit-account--right
+        .edit-account--right__field
+          %label.edit-account--right__field__label
+            Name
+          %input{:type => "text"}/
+        .edit-account--right__field
+          %label.edit-account--right__field__label
+            Email
+          %input{:type => "text"}/
+        .edit-account--right__btn{:type => "submit", :value => "Update"}
+          Update
