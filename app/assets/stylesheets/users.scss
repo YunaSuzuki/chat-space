@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+
+
+.account-page{
+  width: 980px;
+  height: 390px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 60px auto;
+  padding: 60px;
+  display: flex;
+
+
+  .edit-account--left{
+    width: 50%;
+
+
+    &__title{
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      font-size: 40px;
+    }
+
+    &__title::after{
+      content: '';
+      display: block;
+      width: 60px;
+      margin-top: 5px;
+      border-bottom: 1px solid #38aef0;
+    }
+
+    &__subtitle{
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .btn{
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #cccccc;
+      height: 50px;
+      padding: 0 30px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      border-radius: 2px;
+    }
+
+  }
+
+  .edit-account--right{
+    width: 50%;
+    display: block;
+
+
+    &__field{
+      width: 430px;
+      height: 90px;
+      margin-bottom: 10px;
+
+
+      &__label{
+        padding: 10px 0;
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+
+    }
+
+    input{
+      width: 100%;
+      padding: 10px;
+      letter-spacing: 1px;
+    }
+
+    &__btn{
+      float: left;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #38aef0;
+      height: 50px;
+      padding: 0 30px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      width: 120px;
+    }
+
+  }
+
+}
