@@ -1,95 +1,141 @@
-*{
-  box-sizing: border-box;
-}
+.account-page {
+  .account-page__inner {
+    width: 980px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 
+    .account-page__inner--left, .account-page__inner--right {
+      float: left;
+      width: 50%;
+    }
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+  }
 
-.account-page{
-  width: 980px;
-  height: 390px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 60px auto;
-  padding: 60px;
-  display: flex;
-
-
-  .edit-account--left{
-    width: 50%;
-
-
-    &__title{
+  .account-page__header {
+    h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
       font-size: 40px;
+      font-weight: 200;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 60px;
+        margin-top: 5px;
+        border-bottom: 1px solid #38aef0;
+      }
     }
 
-    &__title::after{
-      content: '';
-      display: block;
-      width: 60px;
-      margin-top: 5px;
-      border-bottom: 1px solid #38aef0;
-    }
-
-    &__subtitle{
+    h5 {
       margin-bottom: 20px;
       font-size: 14px;
+      font-weight: 200;
     }
 
-    .btn{
-      display: inline-block;
+    .btn {
+      margin-top: 20px;
+      color: #fff;
+      background-color: #ccc;
       font-size: 14px;
-      margin-top: 20px;
-      color: #ffffff;
-      background-color: #cccccc;
-      height: 50px;
-      padding: 0 30px;
-      line-height: 50px;
-      letter-spacing: 1px;
-      text-align: center;
-      border: none;
-      border-radius: 2px;
     }
-
   }
 
-  .edit-account--right{
-    width: 50%;
-    display: block;
+  .field {
+    margin-bottom: 10px;
 
+    .field-label {
+      padding: 10px 0;
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: 200;
 
-    &__field{
-      width: 430px;
-      height: 90px;
-      margin-bottom: 10px;
-
-
-      &__label{
-        padding: 10px 0;
-        letter-spacing: 1px;
-        font-size: 14px;
+      i {
+        font-size: 11px;
       }
-
     }
 
-    input{
-      width: 100%;
-      padding: 10px;
-      letter-spacing: 1px;
+    .field-input {
+      input {
+        width: 100%;
+        padding: 10px;
+        letter-spacing: 1px;
+      }
     }
-
-    &__btn{
-      float: left;
-      margin-top: 20px;
-      color: #ffffff;
-      background-color: #38aef0;
-      height: 50px;
-      padding: 0 30px;
-      line-height: 50px;
-      letter-spacing: 1px;
-      width: 120px;
-    }
-
   }
 
+  .btn {
+    display: inline-block;
+    height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+  }
+
+  input[type='submit'] {
+    float: left;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #38aef0;
+  }
+
+  .field-label {
+    .field_with_errors {
+      display: inline-block;
+      color: #d65f4c;
+      font-weight: 400;
+    }
+  }
+
+  .field-input {
+    .field_with_errors {
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #d65f4c;
+      }
+    }
+  }
+}
+
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  h2 {
+    margin-bottom: 10px;
+    color: #d65f4c;
+    font-size: 14px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    list-style: square;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
 }
