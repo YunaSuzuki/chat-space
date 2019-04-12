@@ -1,15 +1,7 @@
 .wrapper
-  .chat-side
-    .side-header
-      .side-header__box
-        %p.side-header__box__user-name user_name
-        %ul.side-header__box__menu
-          = fa_icon "edit"
-          = fa_icon "cog"
-    .groups
-      .group
-        %p.group__group-name sample
-        %p.group__latest-message まだメッセージがありません
+  .side-bar
+    = render 'shared/side_header'
+    = render 'shared/side_groups'
   .main-chat
     .main-header
       .main-header__left-box

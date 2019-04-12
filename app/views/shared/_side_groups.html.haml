@@ -1,0 +1,10 @@
+/ ユーザー編集ページに遷移するためのパスを追加
+.side-bar
+  .groups
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .group
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
