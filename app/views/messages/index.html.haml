@@ -3,16 +3,7 @@
     = render 'shared/side_header'
     = render 'shared/side_groups'
   .main-chat
-    .main-header
-      .main-header__left-box
-        %h2.main-header__left-box__current-group  sample
-        %ul.main-header__left-box__member-list
-          Member :
-          %li.main-header__left-box__member-list__member
-            user1
-      .main-header__edit-btn Edit
-    .messages
-      ここにメッセージが表示されます。
+    = render 'shared/main_chat'
     .form
       %form.form__new-message
         .form__new-message__input-box
