@@ -20,56 +20,6 @@ a:link, a:visited, a:hover, a:active{
 
 
 
-    .main-header{
-        width: calc(100vw - 300px);
-        border-bottom-style: solid;
-        border-color: #eeeeee;
-        justify-content: space-between;
-        display: flex;
-        height: 100px;
-
-
-        &__left-box{
-            padding: 0 0 0 40px;
-
-
-            &__current-group{
-                padding: 35px 0 0;
-                color: #333333;
-                font-size: 20px;
-            }
-
-
-            &__member-list{
-                font-size: 12px;
-                color: #999999;
-                padding: 15px 0 0;
-                display: flex;
-                margin-right: 0;
-
-
-                &__member{
-                    font-size: 12px;
-                    color: #999999;
-                }
-            }
-        }
-
-        &__edit-btn{
-            height: 40px;
-            line-height: 40px;
-            color: #38aef0;
-            border-style: solid;
-            border-color: #38aef0;
-            border-width: thin;
-            padding: 0 20px;
-            position: absolute;
-            right: 40px;
-            margin: 28px 40px 0 0;
-        }
-
-    }
-
     .messages{
         box-sizing: border-box;
         height: calc(100vh - 190px);

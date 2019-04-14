@@ -1,0 +1,59 @@
+.side-bar {
+    box-sizing: border-box;
+    color: $white;
+    width: 300px;
+
+    .side-header{
+    background-color: #253141;
+    font-size: 16px;
+    height: 100px;
+    width: 300px;
+    padding: 0 20px;
+
+    &__box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+
+        &__name{
+          color: #fff;
+              font-weight: bold;
+              font-size: 16px;
+        }
+
+        &__lists{
+          display: flex;
+          letter-spacing: 0.3rem;
+        }
+
+    }
+}
+
+a{
+  text-decoration: none;
+}
+
+
+    .groups {
+      background-color: $side_blue_light;
+      height: calc(100vh - 100px);
+      padding: 0 20px;
+
+      .group {
+        box-sizing: border-box;
+        padding: 20px 0 20px;
+
+        &__name {
+          color: $white;
+          font-size: 15px;
+        }
+
+        &__message {
+          color: $white;
+          font-size: 11px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
