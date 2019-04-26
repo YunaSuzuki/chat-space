@@ -1,7 +1,6 @@
 class GroupsController < ApplicationController
 
   def index
-    return set_group
   end
 
   def new
