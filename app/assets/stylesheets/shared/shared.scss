@@ -25,12 +25,13 @@
 }
 
 .main-header{
-        width: calc(100vw - 300px);
-        border-bottom-style: solid;
-        border-color: #eeeeee;
-        justify-content: space-between;
-        display: flex;
-        height: 100px;
+    position: fixed;
+    width: calc(100vw - 300px);
+    border-bottom-style: solid;
+    border-color: #eeeeee;
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
 
 
         &__left-box{
