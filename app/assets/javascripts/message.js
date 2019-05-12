@@ -1,37 +1,28 @@
 $(function(){
   function buildHTML(message){
 
-    var date = new Date();
-    var y = date.getFullYear();
-    var m = ("00" + (date.getMonth()+1)).slice(-2);
-    var d = ("00" + date.getDate()).slice(-2);
-    var hour = date.getHours();
-    var minute = date.getMinutes();
-    var result = y + "/" + m + "/" + d + "  " + hour + ":" + minute;
-
-
-  if(message.image.url == null){
-    var image = '';
-  } else{
+    var image;
     var image_url = message.image.url;
-    var image = `<img class="lower-message__image" src="${image_url}", alt="${image_url}">`
-  }
+    var image_tag = `<img class="lower-message__image" src="${image_url}", alt="${image_url}">`;
+
+
+  (message.image.url == null) ? (image = '') : (image = image_tag)
 
 
     var html = `<div class="message">
       <div class="upper-message">
         <div class="upper-message__user-name">
+          ${message.user_name}
         </div>
-        ${message.user_name}
         <div class="upper-message__date">
-        ${result}
+          ${message.created_at}
         </div>
       </div>
       <div class="lower-message">
         <p class="lower-message__content">
-        ${message.content}
+          ${message.content}
         </p>
-        ${image}
+          ${image}
       </div>
       </div>`;
       return html;

@@ -11,7 +11,6 @@ class MessagesController < ApplicationController
     @message.user = current_user
     if @message.save
       respond_to do |format|
-      #format.html { redirect_to :group_messages }
       format.json
     end
     else
