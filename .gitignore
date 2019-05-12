@@ -14,7 +14,6 @@
 /tmp/.keep
 public/uploads/message/image
 /tmp/
-/images/
 
 # Ignore Byebug command history file.
 .byebug_history
